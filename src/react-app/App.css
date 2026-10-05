@@ -1,45 +1,10 @@
-#root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
-}
-
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
-}
-.logo.cloudflare:hover {
-	filter: drop-shadow(0 0 2em #f6821faa);
-}
-
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
-}
-
-.card {
-	padding: 2em;
-}
-
-.read-the-docs {
-	color: #888;
-}
+.card { width:100%; max-width:520px; background:var(--card); border:1px solid #262936; border-radius:16px;
+        padding:40px 32px; text-align:center; }
+.tag { display:inline-block; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);
+       border:1px solid var(--accent); border-radius:999px; padding:4px 12px; margin-bottom:20px; }
+h1 { font-size:clamp(32px,8vw,48px); letter-spacing:-.02em; margin-bottom:12px; }
+p { color:var(--muted); line-height:1.6; margin-bottom:28px; }
+.btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:600;
+       padding:14px 28px; border-radius:10px; }
+.btn:hover { opacity:.9; }
+footer { margin-top:28px; font-size:12px; color:var(--muted); }
